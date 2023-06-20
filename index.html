@@ -1,38 +1,20 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
+
 <div id="canvas-container"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
-<script>
-    function init() {
-        var container = document.getElementById('canvas-container');
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-        container.appendChild(renderer.domElement);
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script/js/model.js"></script>
 
-        var loader = new THREE.GLTFLoader();
-        var gltfURL = 'C:/Users/Andrii/Desktop/Job/source/scene.gltf';
-        loader.load(gltfURL, function (gltf) {
-            scene.add(gltf.scene);
-        });
-
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
-        }
-
-        animate();
-    }
-
-    window.addEventListener('load', init);
-</script>
 </body>
+
 </html>
