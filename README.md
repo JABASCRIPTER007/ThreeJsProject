@@ -2,6 +2,8 @@
 
 This project is a web-based application that utilizes the Three.js library to create a 3D scene and interactive 3D model rendering. The main purpose of the code is to set up the necessary components for rendering the 3D model and implementing user interactions.
 
+![Опис зображення](video.gif)
+
 ## Libraries Used
 
 Three.js: Three.js is a popular JavaScript library for creating and displaying 3D computer graphics on the web. It provides a wide range of functionalities for creating and manipulating 3D objects, scenes, cameras, and lights. In this project, Three.js is used to render the 3D scene, load and display the GLTF model, handle camera movement and zooming, and enable user interactions.
@@ -29,19 +31,12 @@ The code includes event listeners for model rotation using the mouse. When the u
 ### - Window Load and Animation:
 The init function is executed when the window is loaded (window.addEventListener('load', init)). It initializes the scene and starts the animation loop using the requestAnimationFrame function. The animation loop (animate function) continuously renders the scene with the updated camera and model positions, providing smooth and interactive rendering.
 
-## Приклад
+## HTML and CSS
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <div id="canvas-container"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="script/js/model.js"></script>
-</body>
-</html>
+The code includes an HTML structure with a canvas-container div element to hold the rendered scene. It also includes a reference to an external CSS file (style.css) that defines the styles for the canvas-container and body elements.
+
+The HTML file includes script tags to load the required JavaScript libraries (Three.js and GLTFLoader) and the main script file (script.js) that contains the project code.
+
+The CSS file (style.css) sets the width and height of the canvas-container element to occupy the entire viewport (100% width and 100vh height) and removes the default margin and padding from the body element.
+
+Please note that the provided code is incomplete and missing the closing html tag.
