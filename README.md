@@ -1,12 +1,10 @@
-# Назва проекту
+# Project Description
 
-Опис проекту тут.
+This project is a web-based application that utilizes the Three.js library to create a 3D scene and interactive 3D model rendering. The main purpose of the code is to set up the necessary components for rendering the 3D model and implementing user interactions.
 
-## Встановлення
+## Libraries Used
 
-1. Клонуйте репозиторій: `git clone https://github.com/ваш-репозиторій`
-2. Відкрийте термінал і перейдіть до папки проекту: `cd назва-папки`
-3. Встановіть залежності: `npm install`
+Three.js: Three.js is a popular JavaScript library for creating and displaying 3D computer graphics on the web. It provides a wide range of functionalities for creating and manipulating 3D objects, scenes, cameras, and lights. In this project, Three.js is used to render the 3D scene, load and display the GLTF model, handle camera movement and zooming, and enable user interactions.
 
 ## Використання
 
