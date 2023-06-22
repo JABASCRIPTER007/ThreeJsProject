@@ -12,12 +12,6 @@ Three.js: Three.js is a popular JavaScript library for creating and displaying 3
 
 The project consists of the following main functionalities:
 
-<<<<<<< HEAD
-### - Scene Setup:
-=======
-### - Scene Setup: 
->>>>>>> main
-
 The init function sets up the necessary components for rendering the 3D scene. It creates a scene, camera, renderer, and container element to hold the rendered scene. The container element is obtained from the DOM using its ID (canvas-container). The renderer is responsible for rendering the scene with WebGL capabilities.
 
 ### - Model Loading:
